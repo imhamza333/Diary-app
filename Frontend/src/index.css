@@ -11,3 +11,135 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+
+.nav1{
+  color: white;
+}
+.div1{
+  margin: 20px 0 0 10px;
+  width: 75%;
+  
+  
+}
+.text1{
+  margin: 10px 0 0 40px;
+}
+.list{
+  list-style: none;
+}
+.btn1{
+  margin: 0 0 0 35px;
+}
+.btn2{
+  margin: 0 0 0 5px;
+}
+.left{
+  width: 50%;
+  float: left;
+  
+  height: 400px;
+}
+.right{
+  width: 50%;
+  float: right;
+  
+}
+.h2{
+  margin: 20px 0 0 200px;
+}
+.input{
+  width: 100%;
+  margin: 10px 0 0 0;
+  border: 1px solid silver;
+  border-radius: 5px ;
+  height: 35px;
+}
+.input1{
+  width: 100%;
+  margin: 10px 0 0 0;
+  border: 1px solid silver;
+  border-radius: 5px ;
+  height: 35px;
+}
+.input2{
+  width: 100%;
+  margin: 10px 0 0 0;
+  border: 1px solid silver;
+  border-radius: 5px ;
+  height: 35px;
+}
+.h5{
+  margin: 10px 0 0 0;
+}
+.input3{
+  margin: 10px 0 0 0;
+}
+.btn3{
+  margin: 10px 0 0 0;
+}
+.filter{
+  margin: 10px 0px 0 10px;
+  width: 75%;
+  border-radius: 5px;
+}
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+.account{
+    margin: 20px 0 0 300px;
+}
+.form1{
+    margin: 0px 0 0 300px;
+    width: 30%;
+}
+.label1{
+    margin: 0 0 0 300px;
+}
+.form2{
+  margin: 0px 0 0 300px;
+  width: 30%;
+}
+.label2{
+  margin: 0 0 0 300px;
+}
+.form3{
+  margin: 0px 0 0 300px;
+  width: 30%;
+}
+.label3{
+  margin: 0 0 0 300px;
+}
+.form4{
+  margin: 0px 0 0 300px;
+  width: 30%;
+}
+.label4{
+  margin: 0 0 0 300px;
+}
+.btn4{
+  width: 30%;
+  margin: 20px 0 0 300px;
+  border-radius: 5px;
+  background-color:royalblue;
+  border-color: royalblue;
+  
+}
