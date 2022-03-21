@@ -31,7 +31,6 @@ class ArticleList extends Component {
         return (
             <div>
                 <Articles data={this.state.articles} /> <br />
-                <h2> What you did today  </h2>
 
             </div>
 
