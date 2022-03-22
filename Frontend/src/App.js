@@ -1,27 +1,28 @@
-import React, { Component } from 'react';
-import 'antd/dist/antd.css';
-// import { BrowserRoutes as Router } from 'react-router-dom';
-// import BaseRouter from './routes';
+import React from 'react';
+import './App.css';
+import Header from './components/Header';
+import DiaryListPage from './pages/DiaryListPage';
+import Diarypage from './pages/Diarypage';
 
 
-import CustomLayout from './containers/Layout';
-import ArticleList from './containers/ArticleListView';
+import {
+    BrowserRouter,
+    Routes,
+    Route
+  } from "react-router-dom";
 
 
-class App extends Component {
-    state = { loading: true };
-
-    render() {
-        return (
-            <div className="App">
-
-                <CustomLayout>
-                    <ArticleList />
-                </CustomLayout>
-
-            </div>
-        );
-    }
+function App() {
+    return (
+        <BrowserRouter>
+            <Header />
+            <Routes>
+                <Route path="/" exact element={<DiaryListPage/>} />
+                <Route path="/diary/:id" element={<Diarypage />} /> 
+            </Routes>
+        </BrowserRouter>
+    )
 }
+
 
 export default App;
