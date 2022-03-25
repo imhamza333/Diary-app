@@ -6,21 +6,23 @@ import Diarypage from './pages/Diarypage';
 
 
 import {
-    BrowserRouter,
-    Routes,
+    BrowserRouter as Router,
     Route
   } from "react-router-dom";
+  
 
 
 function App() {
     return (
-        <BrowserRouter>
-            <Header />
-            <Routes>
-                <Route path="/" exact element={<DiaryListPage/>} />
-                <Route path="/diary/:id" element={<Diarypage />} /> 
-            </Routes>
-        </BrowserRouter>
+        <Router>
+            <div className="container dark">
+                <div className="App">
+                    <Header />
+                    <Route path="/" exact component={DiaryListPage} />
+                    <Route path="/diary/:id" component={Diarypage } /> 
+                </div>
+            </div>
+        </Router>
     )
 }
 

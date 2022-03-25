@@ -2,8 +2,8 @@ import React from 'react';
 
 function Header() {
     return (
-        <div>
-            Header
+        <div className="app-header">
+            Diary Home
         </div>
     )
 }

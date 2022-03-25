@@ -18,7 +18,11 @@ function DiaryListPage() {
     }
 
     return (
-        <div>
+        <div className="notes">
+            <div className='notes-header'>
+                <h2 className='notes-title'>&#9782; Diary</h2>
+                <p className="notes-count">{Diary.length}</p>
+            </div>
             <div className='notes-list'>
                 {Diary.map((note, index) => (
                     <ListItem key={index} note={note}/>

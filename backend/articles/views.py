@@ -59,3 +59,18 @@ def getBlog(request, pk):
     serializer = blogSerializer(blogs, many=False)
     return Response(serializer.data)
 
+
+@api_view(['PUT'])
+def updateBlog(request, pk):
+    data = request.data
+    blogs = blog.objects.get(id=pk)
+    serializer = blogSerializer(instance=blogs, data=data)
+    
+    if serializer.is_valid():
+        serializer.save()
+
+    return Response(serializer.data)
+
+
+
+

@@ -1,10 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 function ListItem({note}) {
     return (
         <div>
-            <h2>{note.title}</h2>
-            <h3>{note.body}</h3>
+            <Link to={`/diary/${note.id}`}>
+                <div className='notes-list-item'>
+                    <h2 className="notes-list-item">{note.title}</h2>
+                </div>
+            </Link>
+            <p>{note.body}</p>
         </div>
     )
 }
