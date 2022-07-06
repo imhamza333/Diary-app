@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import ListItem from '../components/ListItem';
+import AddButton from '../components/AddButton';
 
 function DiaryListPage() {
 
@@ -19,15 +20,17 @@ function DiaryListPage() {
 
     return (
         <div className="notes">
-            <div className='notes-header'>
-                <h2 className='notes-title'>&#9782; Diary</h2>
-                <p className="notes-count">{Diary.length}</p>
+            <div className="notes-header">
+                <h2 className="notes-title">&#9782; Notes</h2>
+                <p className="notes-count">Total Diaries: {Diary.length}</p>
             </div>
-            <div className='notes-list'>
+
+            <div className="notes-list">
                 {Diary.map((note, index) => (
-                    <ListItem key={index} note={note}/>
+                    <ListItem key={index} note={note} />
                 ))}
             </div>
+            <AddButton />
         </div>
     )
 }

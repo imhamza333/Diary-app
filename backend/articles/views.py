@@ -48,7 +48,7 @@ def getRoutes(request):
 
 @api_view(['GET'])
 def getBlogs(request):
-    blogs =  blog.objects.all()
+    blogs =  blog.objects.all().order_by('-updated')
     serializer = blogSerializer(blogs, many=True)
     return Response(serializer.data)
 
@@ -71,6 +71,24 @@ def updateBlog(request, pk):
 
     return Response(serializer.data)
 
+
+
+@api_view(['DELETE'])
+def deleteBlog(request, pk):
+     Blogs = blog.objects.get(id=pk)
+     Blogs.delete()
+     return Response('Note was deleted!')
+
+
+@api_view(['POST'])
+def createBlog (request):
+    data = request.data
+    Blogs = blog.objects.create(
+        body=data['body'],
+        # title=data['title']
+    )
+    serializer = blogSerializer(Blogs, many=True)
+    return Response(serializer.data)
 
 
 

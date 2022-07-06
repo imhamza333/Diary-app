@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-function Header() {
+const Header = () => {
+
     return (
         <div className="app-header">
-            Diary Home
+            <h1>Diary Home</h1>
         </div>
     )
 }
 
-export default Header;
+export default Header
